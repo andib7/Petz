@@ -1,16 +1,13 @@
 {
-  "name": "petzcoupons",
+  "name": "neko-coupon-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A coupon app with a cat that follows your mouse.",
+  "main": "src/index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pack": "electron-packager . --platform=win32 --arch=x64 --out=dist/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "electron": "^32.0.1"
+    "electron": "^latest"
   }
 }
