@@ -1,0 +1,16 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore Electron executables
+*.exe
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore Electron cache
+.cache/
