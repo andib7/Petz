@@ -1,12 +1,12 @@
-const { ipcRenderer } = require('electron');
-
-// Example function to trigger opening of the URL
-function openPrivateBrowser(url) {
-    ipcRenderer.invoke('open-private-browser', url);
-}
-
-// Example: Replace with your own logic to get the current URL
-const currentUrl = 'https://example.com';
-
-// Call this function when needed
-openPrivateBrowser(currentUrl);
+document.getElementById('private-shopping-btn').addEventListener('click', () => {
+    console.log('Button clicked!');
+    
+    const currentUrl = 'https://www.example.com'; // Dummy URL for now
+    window.electron.ipcRenderer.invoke('open-private-browser', currentUrl)
+        .then(response => {
+            console.log('Browser opened successfully:', response);
+        })
+        .catch(error => {
+            console.error('Failed to open browser:', error);
+        });
+});
