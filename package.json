@@ -8,6 +8,6 @@
     "pack": "electron-packager . --platform=win32 --arch=x64 --out=dist/"
   },
   "devDependencies": {
-    "electron": "^latest"
+    "electron": "26.2.2"
   }
 }
