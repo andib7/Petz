@@ -2,12 +2,15 @@
   "name": "neko-coupon-app",
   "version": "1.0.0",
   "description": "A coupon app with a cat that follows your mouse.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-packager . --platform=win32 --arch=x64 --out=dist/"
   },
   "devDependencies": {
     "electron": "26.2.2"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
   }
 }
